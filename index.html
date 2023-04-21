@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>14 неделя "Массивы". Домашнее задание</title>
+  </head>
+  <body>
+    <div class="root">
+      <h1>Привет, это мои ответы на задания 14 недели (6 неделя JS)</h1>
+      <section class="theory">
+        <h2>Теоретические вопросы</h2>
+        <ol>
+          <li>
+            Что называется массивом?
+            <p>
+              Ответ: массив - структура данных, которая может хранить не одно, а
+              несколько значений. Это упорядоченная коллекция данных.<br />
+              Элементы в массиве перечисляются через запятую, все элементы
+              заключены в общие квадратные скобки.
+            </p>
+          </li>
+          <li>
+            С какого порядкового номера начинаются массивы?
+            <p>
+              Ответ: каждому элементу в массиве автоматически присваивается
+              порядковый номер (индекс).<br />
+              Нумерация элементов идет слева-направо и начинается с нуля.
+            </p>
+          </li>
+          <li>
+            Сколько значений может иметь массив?
+            <p>
+              Ответ: массив - структура данных, которая может хранить не одно, а
+              несколько значений. Даже лучше сказать, что множество значений.
+            </p>
+          </li>
+          <li>
+            Как можно получить значение текстового поля из данной формы? (Форма
+            одна)<br />
+            <img src="assets/img/img1.png" alt="form" /><br />
+
+            <form action="start.php" method="post" name="fld">
+              <input type="text" name="field" value="Text field" />
+              <input type="submit" value="Старт" name="btn" />
+            </form>
+            <p>
+              Ответ: let elemValue = document.querySelectorAll("input");
+              //получаем все элементы input <br />
+              console.log(elemValue[0].value); //выводим значение текстового
+              элемента в консоль
+            </p>
+          </li>
+          <li>
+            Какой результат работы данного скрипта?<br />
+            <img src="assets/img/img2.png" alt="example" />
+            <p>Ответ: 5. Покажет элемент с индексом 3, а его значение 5.</p>
+          </li>
+          <li>
+            Какой результат работы данного скрипта?<br />
+            <img src="assets/img/img3.png" alt="example2" />
+            <p>
+              Ответ: caught ReferenceError: mas3 is not defined. Потому, что так
+              вызывать элемент неверно.
+            </p>
+          </li>
+          <li>
+            Что делает строка let mas = new Array()?
+            <p>Ответ: создает новый пустой массив.</p>
+          </li>
+          <li>
+            Может ли массив состоять из элементов разных типов?
+            <p>
+              Ответ: да может. В JS массив может состоять из элементов разных
+              типов: чисел, строк, функций, других массивов.
+            </p>
+          </li>
+          <li>
+            Укажите длину массива после исполнения следующего кода:<br />
+            let a = new Array(2);<br />
+            a[1] = null;<br />
+            <p>Ответ: 2</p>
+          </li>
+          <li>
+            Что выведет консоль?<br />
+            const students = [“Lena", “Olya", "Ylia", "Roma" , "Vova" ];<br />
+            console.log(students[3]);<br />
+            <p>
+              Ответ: caught SyntaxError: Invalid or unexpected token (at
+              index.js:25:19) //в Google Chrome<br />
+              Uncaught SyntaxError: illegal character U+201C // в Firefox<br />
+              Кавычки в начале и в конце каждого элемента-строки должны быть
+              одинаковыми. Кроме того - это не верный синтаксис двойных кавычек.
+            </p>
+          </li>
+          <li>
+            Что выведет третья строка?<br />
+            <img src="assets/img/img4.png" alt="example3" />
+            <p>
+              Ответ: метод shift() удаляет первый элемент из массива, меняя
+              исходный массив.<br />
+              В результате этого кода, 3 строка выведет массив fruits из трех
+              элементов: "Яблоко", "Лимон", "Ананас".
+            </p>
+          </li>
+        </ol>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
