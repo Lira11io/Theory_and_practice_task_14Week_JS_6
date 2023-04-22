@@ -79,3 +79,16 @@ cinema.forEach((director) => {
   const directorElement = createDirector(director);
   cont.append(directorElement); //добавляем разметку в контейнер
 });
+
+const best = document.querySelector(".container__best"); //получаем контейнер, куда будем добавлять новую разметку для лучших фильмов
+
+const topFilmsList = cinema.map((director) => {
+  //получаем новый массив с лучшими фильмами
+  return director.top_rated_film;
+});
+
+const filmElement = document.createElement("p"); //создаем новую разметку для лучших фильмов
+filmElement.className = "container__best-films"; //создаем класс для нового элемента разметки
+filmElement.textContent = topFilmsList; //вставляем значение конкретного элемента массива между тегами p в разметке
+
+best.append(filmElement); //добавляем разметку в контейнер

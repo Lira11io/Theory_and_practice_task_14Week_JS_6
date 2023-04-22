@@ -17,18 +17,24 @@
   color: black;
 }
 
+/*Наложение полупрозрачного фона*/
+.container__insert {
+  background: rgba(148, 183, 197, 0.767);
+}
+
 /*Обертка для содержания страницы*/
-.container__block {
+.container__block,
+.container__best {
   width: 100%;
   max-width: 100%;
   min-height: 100%;
   height: auto;
-  background: rgba(148, 183, 197, 0.767);
 }
 
 /*Заголовок страницы*/
 .container__title {
   text-align: center;
+  font-size: 2;
 }
 
 /*Обертка для блоков с информацией*/
@@ -57,4 +63,16 @@
 /*Ссылка на фильмографию*/
 .container__cinema-a {
   color: rgb(53, 48, 48);
+}
+
+/*Заголовок блока с лучшими фильмами*/
+.container__best-title {
+  text-align: center;
+}
+
+/*Список лучших фильмов*/
+.container__best-films {
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
 }
