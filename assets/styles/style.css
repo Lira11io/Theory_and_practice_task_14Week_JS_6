@@ -1,3 +1,60 @@
 .root {
   margin-left: 15px;
 }
+
+/*Обертка для всей страницы*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: url("../img/kinoplenka.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(95, 89, 89, 0.61);
+  color: black;
+}
+
+/*Обертка для содержания страницы*/
+.container__block {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: rgba(148, 183, 197, 0.767);
+}
+
+/*Заголовок страницы*/
+.container__title {
+  text-align: center;
+}
+
+/*Обертка для блоков с информацией*/
+.container__cinema {
+  padding: 15px;
+}
+
+/*Имя режиссера*/
+.container__cinema-p {
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+
+/*Обертка для блоков с карьерой и фильмографией*/
+.container__cinema-f {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Информация о карьере*/
+.container__cinema-p2 {
+  color: rgb(51, 53, 151);
+  margin-top: 0;
+}
+
+/*Ссылка на фильмографию*/
+.container__cinema-a {
+  color: rgb(53, 48, 48);
+}
